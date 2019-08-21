@@ -1,0 +1,200 @@
+/*
+  ========================================
+  Global
+  ========================================
+*/
+
+html, body {
+    background-image: url('../images/background.png');
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.5em;
+    height:100%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear:both;
+   }
+
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color:#4aaaa5;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin:10px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0px;
+}
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+
+/* ===  Header Region === */
+
+header {
+    background-color: #fff;
+    border-bottom: 4px solid #ccc;
+    width:100%;
+    height:100px;
+    position: relative;
+}
+
+.contain {
+    margin: auto;
+    width: 960px;
+    box-sizing: border-box;
+}
+
+.logo a {
+    display: block;
+    float:left;
+    padding: 20px 40px;
+    background-color:#4aaaa5;
+    position: absolute;
+    bottom: 0;
+    color:#fff;
+    font-size:30px;
+    margin-left:0px;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    background-color: #666;
+}
+
+/* ===  Navigation Region === */
+
+nav {
+    display: block;
+    float: right;
+    padding-top: 50px;
+
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-right:1px solid #666;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color:#4aaaa5;
+}
+
+nav a#last {
+    border-right:0px;
+}
+
+/* ===  Content Region === */
+
+.container {
+    margin:auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top:40px;
+    padding:20px;
+    width: 960px;
+    min-height:100%;
+}
+
+/* ===  Footer Region === */
+
+#push {
+    height:50px;
+}
+
+footer {
+    background-color: #666;
+    border-top: 8px solid #4aaaa5;
+    width:100%;
+    bottom:0;
+    height:100px;
+    color:#ccc;
+}
+
+footer p{
+    text-align: center;
+    padding:20px;
+}
+
+/*
+  ========================================
+  Portolio
+  ========================================
+*/
+
+.portItem {
+    float: left;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 300px;
+}
+
+.portItem a:hover {
+    background-color:#4aaaa5;
+}
+
+.portItem h3 {
+    width: 100%;
+    background-color: #4aaaa5;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+/*
+  ========================================
+  Form Elements
+  ========================================
+*/
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0px;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 1em;
+    color: #777;
+}
+
+button {
+    background: #4aaaa5;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    border: 0px;
+}
