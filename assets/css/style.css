@@ -198,3 +198,39 @@ button {
     color: #fff;
     border: 0px;
 }
+
+@media screen and (max-width:640px) {
+    .logo a {
+        margin-left:0px;
+        width:100%;
+        top:0;
+        position: static;
+        height:30px;
+        text-align: center;
+    }
+    .container {
+        max-width:90%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contain {
+        max-width:100%;
+    }
+    .logo a {
+        margin-left:30px;
+    }
+    .container {
+        margin:30px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .contain {
+        width:900px;
+    }
+    .container {
+        margin:30px;
+        max-width:650px;
+    }
+}
