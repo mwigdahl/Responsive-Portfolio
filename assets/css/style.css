@@ -180,6 +180,7 @@ input {
     font-size: 1em;
     color: #777;
     margin: 10px 0px;
+    border: 1px solid #ccc;
 }
 
 textarea {
@@ -199,17 +200,17 @@ button {
     border: 0px;
 }
 
-@media screen and (max-width:640px) {
-    .logo a {
-        margin-left:0px;
-        width:100%;
-        top:0;
-        position: static;
-        height:30px;
-        text-align: center;
+
+@media screen and (max-width:980px) {
+    .contain {
+        width:900px;
     }
     .container {
-        max-width:90%;
+        width:auto;
+    }
+    .box-in {
+        margin:30px;
+        max-width:70%;
     }
 }
 
@@ -223,14 +224,41 @@ button {
     .container {
         margin:30px;
     }
+    .box-in {
+        margin:0px;
+        max-width:100%;
+    }
 }
 
-@media screen and (max-width:980px) {
-    .contain {
-        width:900px;
+@media screen and (max-width:640px) {
+   header {
+       height:120px;
+   }
+    .logo a {
+        margin-left:0px;
+        width:100%;
+        top:0;
+        position: static;
+        height:70px;
+        text-align: center;
+        box-sizing: border-box;
     }
     .container {
-        margin:30px;
-        max-width:650px;
+        max-width:90%;
+    }
+    nav {
+        text-align: center;
+        float:none;
+        position: relative;
+        top: 13px;
+    }
+    .portItem {
+        margin:0px;
+        width:100%;
+        max-height:100%;
+    }
+
+    .portItem img {
+        width:100%;
     }
 }
